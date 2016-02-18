@@ -1,0 +1,24 @@
+/**
+     * Gets Date format.
+     * @param date
+     * @return stringDate
+     */
+public static String getDateFormate(Date date){
+        String stringDate;
+        SimpleDateFormat dateFormat=new SimpleDateFormat();
+        dateFormat.applyPattern("dd-MMM-yyyy");
+        stringDate=dateFormat.format(date);
+        return stringDate;
+    }
+
+    /**
+     * Gets Time format.
+     * @param date
+     * @return stringTime
+     */
+    public static String getTimeFormat(Date date){
+        String stringTime;
+        DateFormat dateFormat=DateFormat.getTimeInstance();
+        stringTime=dateFormat.format(date);
+        return stringTime;
+    }
